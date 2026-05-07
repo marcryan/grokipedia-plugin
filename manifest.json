@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Grokipedia Search Rewriter",
+  "version": "0.1.0",
+  "description": "Rewrites Wikipedia search result links to Grokipedia equivalents.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://duckduckgo.com/*",
+    "https://grokipedia.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://duckduckgo.com/*",
+        "https://search.brave.com/search*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
