@@ -46,5 +46,4 @@ Grokipedia is intended to provide a concise, evidence-focused style that some us
 
 ## Config
 
-If your Grokipedia URL is different, edit `GROKIPEDIA_BASE_URL` in `content.js`.
-
+If you would rather use a different source ([Citizendium, IQ.wiki, Encyc, Scholarpedia](https://en.citizendium.org/) , etc.), edit `GROKIPEDIA_BASE_URL` in `content.js`.
